@@ -11,7 +11,7 @@ import (
 
 func TestIntegration(t *testing.T) {
 	os.Setenv("TOTP_ICON_PATH", "test_icon.ico")
-	os.Setenv("TOTP_KEY", "JBSWY3DPEHPK3PXP")
+	os.Setenv("TOTP_SECRET", "JBSWY3DPEHPK3PXP")
 
 	iconPath := "test_icon.ico"
 	file, err := os.Create(iconPath)

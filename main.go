@@ -37,7 +37,7 @@ func onReady() {
 	systray.SetTitle("TOTP")
 	systray.SetTooltip("TOTP")
 
-	secret := os.Getenv("TOTP_KEY")
+	secret := os.Getenv("TOTP_SECRET")
 
 	if secret == "" {
 		systray.AddMenuItem("No secret found", "No secret found")
